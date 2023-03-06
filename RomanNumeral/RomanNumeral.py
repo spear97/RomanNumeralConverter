@@ -1,4 +1,4 @@
 from Converter import *
 
-#Initialize and Set a Converter
-con = Converter('MCMIX')
+#Output the Value of XIV in a Numeric Values
+print(Converter().RomanNumeralToDecimal('XIV'))
