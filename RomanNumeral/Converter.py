@@ -1,3 +1,5 @@
+import re
+
 class Converter(object):
 
     #Constructor
@@ -38,6 +40,14 @@ class Converter(object):
         #Return the value of sum
         return sum
 
+    #Determine if entered Roman Numeral is Valid
+    def valid_input(self, romanNumeral:str = ''):
+
+        # Define a regular expression to match valid Roman numerals
+        pattern = '^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$'
+
+        # Use the re module to search for a match
+        return bool(re.match(pattern, romanNumeral))
 
 
 

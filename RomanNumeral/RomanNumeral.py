@@ -1,1 +1,4 @@
-from Converter import *
+from GUI import GUI
+
+#Run the Application
+GUI()
